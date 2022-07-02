@@ -3,6 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
+
+    <data>
+        <variable
+            name="MyName"
+            type="com.example.aboutme.MyName" />
+    </data>
 <LinearLayout
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,16 +17,14 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/name"
         style="@style/NameStyle"
         android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@={MyName.name}"
         android:textSize="@dimen/text_size"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
     <EditText
         android:id="@+id/nickName"
         android:layout_width="match_parent"
@@ -45,6 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/NameStyle"
+        android:text="@={MyName.nickName}"
         android:visibility="gone"/>
 
     <ImageView

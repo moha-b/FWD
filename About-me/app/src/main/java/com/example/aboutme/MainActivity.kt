@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     //lateinit var done:Button
     //lateinit var typeName:EditText
     //lateinit var showName:TextView
+    private var myName: MyName = MyName("mohab")
     private lateinit var bind: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 //        done.setOnClickListener {
 //            addNicName(it)
 //        }
+        bind.myName = myName
         bind.done.setOnClickListener {
             addNicName(it)
         }
@@ -30,7 +32,8 @@ class MainActivity : AppCompatActivity() {
     private fun addNicName(view:View){
 
         bind.apply {
-            bind.showName.text = bind.nickName.text
+            myName?.nickName = bind.nickName.text.toString()
+            //bind.showName.text = bind.nickName.text
             invalidateAll()
             bind.nickName.visibility = View.GONE
             bind.done.visibility = View.GONE
