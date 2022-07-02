@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">AboutMe</string>
+    <string name="bio">hello there my name in Mohab\n
+    At Google I/O 2019, we announced that Android development will be increasingly Kotlin-firsthand we’ve stood by that commitment\n
+        Kotlin is an expressive and concise programming language that reduces common code errors and easily integrates into existing apps\n
+        If you’re looking to build an Android app, we recommend starting with Kotlin to take advantage of its best-in-class features.
+
+    </string>
+    <string name="name">Name</string>
+    <string name="done">Done</string>
 </resources>
