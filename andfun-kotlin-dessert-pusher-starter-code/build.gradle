@@ -1,3 +1,4 @@
+//noinspection GradleDynamicVersion
 /*
  * Copyright 2018, The Android Open Source Project
  *
@@ -5,7 +6,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -15,23 +16,16 @@
  */
 
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+
 buildscript {
-    ext {
-        version_kotlin = "1.3.72"
-        version_core = "1.3.1"
-        version_constraint_layout = "2.0.0-rc1"
-        version_lifecycle_extensions = "2.2.0"
-        version_material = "1.2.0"
-        version_navigation = '2.4.1'
-    }
+    ext.kotlin_version = '1.3.72'
     repositories {
         google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.2.1'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$version_kotlin"
-        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$version_navigation"
+        classpath 'com.android.tools.build:gradle:4.0.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
