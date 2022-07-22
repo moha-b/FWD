@@ -15,3 +15,23 @@
  */
 
 package com.example.android.trackmysleepquality.database
+
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "sleep_data")
+data class SleepNight(
+
+    @PrimaryKey(autoGenerate = true)
+    val id:Long = 0L,
+
+    @ColumnInfo(name = "start_sleep")
+    val startTime:Long = System.currentTimeMillis(),
+
+    @ColumnInfo(name = "fin_sleep")
+    val endTime:Long = startTime,
+    // rate = -1 to refer that the user didn't put a rate
+    @ColumnInfo(name ="rate")
+    val rate: Int = -1
+)

@@ -70,6 +70,7 @@ dependencies {
 
     // ViewModel and LiveData
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$version_lifecycle"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$version_lifecycle"
 
     // Kotlin Extensions and Coroutines support for Room
     implementation "androidx.room:room-ktx:$version_room"
