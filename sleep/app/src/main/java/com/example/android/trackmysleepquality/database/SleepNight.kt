@@ -30,7 +30,7 @@ data class SleepNight(
     val startTime:Long = System.currentTimeMillis(),
 
     @ColumnInfo(name = "fin_sleep")
-    val endTime:Long = startTime,
+    var endTime:Long = startTime,
     // rate = -1 to refer that the user didn't put a rate
     @ColumnInfo(name ="rate")
     val rate: Int = -1
