@@ -51,7 +51,6 @@ fun NotificationManager.sendNotification(messageBody: String, applicationContext
         contentIntent,
         PendingIntent.FLAG_UPDATE_CURRENT
     )
-
     // TODO: Step 2.0 add style
     val eggImage = BitmapFactory.decodeResource(
         applicationContext.resources,
