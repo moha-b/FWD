@@ -25,9 +25,34 @@
     </Transition>
 
     <!-- Constraints to apply at the start of the animation -->
-    <ConstraintSet android:id="@+id/start">
         <!-- TODO apply starting constraints -->
-    </ConstraintSet>
+        <ConstraintSet android:id="@+id/start">
+            <Constraint
+                android:id="@+id/red_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <Constraint
+                android:id="@+id/left_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <Constraint
+                android:id="@+id/right_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </ConstraintSet>
 
     <!-- Constraints to apply at the end of the animation -->
     <ConstraintSet android:id="@+id/end">

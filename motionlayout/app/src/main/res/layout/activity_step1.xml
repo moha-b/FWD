@@ -17,17 +17,19 @@
 <androidx.constraintlayout.motion.widget.MotionLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_step1_scene">
 
     <ImageView
             android:id="@+id/red_star"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/ic_star_outline"
-            android:tint="?colorSecondary"
-            android:contentDescription="@string/star"
+        android:contentDescription="@string/star"
             android:layout_margin="30dp"
-    />
+        app:tint="?colorSecondary"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
