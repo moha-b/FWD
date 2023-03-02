@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+        <variable
+            name="MyName"
+            type="com.example.aboutme.MyName" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/android_developer"
+            android:textAlignment="center"
+            style="@style/simple_text" />
+
+        <EditText
+            android:id="@+id/nickName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints=""
+            android:text="@={MyName.nickname}"
+            android:hint="@string/what_s_your_nickname"
+            android:textAlignment="center"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_gravity="center"
+            android:text="@string/done"
+            />
+
+        <TextView
+            android:id="@+id/view_nickName"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            style="@style/simple_text"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16">
+
+            <TextView
+                style="@style/simple_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dummy_text" />
+        </ScrollView>
+
+
+    </LinearLayout>
+</layout>

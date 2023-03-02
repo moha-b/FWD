@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="simple_text">
+        <item name="android:fontFamily">@font/bangers</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp30</item>
+    </style>
+</resources>
